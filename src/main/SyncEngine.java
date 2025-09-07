@@ -14,7 +14,7 @@ public class SyncEngine {
 	public void add(iSyncable item) {
 		syncList.add(item.getCode() + ":" + item.encode() );
 		//item.getClass() asks Java: “Hey, what is the actual type of this object right now?”
-		System.out.println(item.getClass().getSimpleName() + " encoded successfully.");
+		
 	}
 	
 	//test to see if each item can decode itself

@@ -19,7 +19,9 @@ public class Event implements iSyncable {
 	}
 	
 	public String encode() {
-		return String.format("%s|%s|%d|%d", event, location, date, time);
+		String str = String.format("%s|%s|%d|%d", event, location, date, time);
+		System.out.println("Event encoded successfully");
+		return str;
 	}
 	
 	public void decode(String str) {
