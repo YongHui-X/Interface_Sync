@@ -24,7 +24,9 @@ public class Task implements iSyncable {
 	//If isDone == true, return 1 
 	//If isDone == false, return 0
 	public String encode() {
-		return String.format("%s|%d|%d|%d|%d", desc, day, month, year, isDone ? 1: 0);
+		String str = String.format("%s|%d|%d|%d|%d", desc, day, month, year, isDone ? 1: 0);
+		System.out.println("Task encoded successfully");
+		return str;
 	}
 	
 	public void decode(String str) {

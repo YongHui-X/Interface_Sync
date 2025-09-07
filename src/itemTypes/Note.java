@@ -16,7 +16,9 @@ public class Note implements iSyncable {
 	}
 	
 	public String encode() {
-		return String.format("%s|%s", title, content);
+		String str = String.format("%s|%s", title, content);
+		System.out.println("Note encoded successfully");
+		return str;
 	}
 	
 	public void decode(String mystr) {

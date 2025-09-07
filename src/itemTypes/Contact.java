@@ -18,7 +18,9 @@ public class Contact implements iSyncable{
 	}
 	//returns data inside this class
 	public String encode() {
-		return String.format("%s|%s|%s", name, mobile, email);
+		String str = String.format("%s|%s|%s", name, mobile, email);
+		System.out.println("Contact encoded successfully");
+		return str;
 	}
 	
 	public void decode(String str) {
